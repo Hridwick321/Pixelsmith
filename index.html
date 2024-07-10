@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE Kerala Tech Futures 2024</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/logo.png" >
+    <script src="script.js"></script>
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            <div class="logo">
+               <a href="https://www.ieee.org/">IEEE</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>IEEE Kerala Tech Futures 2024</h1>
+            <p>On <b>September 15 2024</b> </p>
+            <p>Join us for a day of learning, networking, and innovation at the IEEE Kerala Tech Futures 2024 event.</p>
+            <p>At <i>Rajagiri School of Engineering and Technology</i>, Kochi, Kerala
+            </p>
+
+
+            <a href="#register" class="btn">Register Now</a>
+        </div>
+    </section>
+
+
+    <section id="schedule" class="content-section">
+        <h2>Event Schedule</h2>
+        <ul>
+            <li><strong>9:00 AM - 10:00 AM:</strong> Registration and Welcome Breakfast</li>
+            <li><strong>10:00 AM - 11:00 AM:</strong> Opening Keynote: "The Future of AI" by Dr. Ayesha Khan</li>
+            <li><strong>11:00 AM - 12:00 PM:</strong> Panel Discussion: "Sustainable Technology for the Future"</li>
+            <li><strong>12:00 PM - 1:00 PM:</strong> Networking Lunch</li>
+            <li><strong>1:00 PM - 2:30 PM:</strong> Workshop: "Building with Blockchain" led by Rajesh Menon</li>
+            <li><strong>2:30 PM - 3:00 PM:</strong> Coffee Break</li>
+            <li><strong>3:00 PM - 4:00 PM:</strong> Tech Talk: "Cybersecurity Trends" by Neha Gupta</li>
+            <li><strong>4:00 PM - 5:30 PM:</strong> Interactive Session: "Innovative IoT Solutions" by Anil Kumar</li>
+            <li><strong>5:30 PM - 6:00 PM:</strong> Closing Remarks and Award Ceremony</li>
+        </ul>
+    </section>
+
+
+    <section id="speakers" class="content-section">
+        <h2>Speakers</h2>
+        <div class="speaker-container">
+            <div class="speaker">
+                <img src="assets/Ayesha.jpg" alt="Dr. Ayesha Khan">
+                <div class="speaker-info">
+                    <h3>Dr. Ayesha Khan</h3>
+                    <p>AI Researcher, ABC Tech</p>
+                    <p>Dr. Ayesha Khan is a leading researcher in artificial intelligence with over 15 years of experience in the field. Her work focuses on AI ethics and sustainable AI practices.</p>
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="assets/Rajesh.jpg" alt="Rajesh Menon">
+                <div class="speaker-info">
+                    <h3>Rajesh Menon</h3>
+                    <p>Blockchain Expert, XYZ Solutions</p>
+                    <p>Rajesh Menon is a blockchain developer and consultant. He has worked on several high-profile blockchain projects and is passionate about educating others on the technology.</p>
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="assets/Neha.jpg" alt="Neha Gupta">
+                <div class="speaker-info">
+                    <h3>Neha Gupta</h3>
+                    <p>Cybersecurity Analyst, SecureNet</p>
+                    <p>Neha Gupta specializes in cybersecurity threat analysis and prevention. She has helped numerous organizations enhance their cybersecurity measures and has been a speaker at various international conferences.</p>
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="assets/Anil kumar.jpg" alt="Anil Kumar">
+                <div class="speaker-info">
+                    <h3>Anil Kumar</h3>
+                    <p>IoT Innovator, IoTech Solutions</p>
+                    <p>Anil Kumar is an expert in Internet of Things (IoT) technologies. He has developed innovative IoT solutions for smart homes and cities and is an advocate for the use of IoT in enhancing everyday life.</p>
+                </div>
+            </div>
+        </div>
+    </section>     
+    <section id="register" class="content-section">
+        <h2>Register Now</h2>
+        <form action="https://www.ieeetechfutures2024/register" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+           
+           
+            <div class="form-group">
+                <label for="membership">IEEE Membership:</label>
+                <select id="membership" name="membership" required onchange="toggleFields(); ">
+
+
+                    <option value="member">IEEE Member</option>
+                    <option value="non-member">Non-IEEE Member</option>
+                </select>
+            </div>
+            <div class="form-group" id="membership-id-group">
+                <label for="membership-id">Membership Id:</label>
+                <input type="text" id="membership-id" name="membership-id" >
+            </div>
+            <div class="form-group payment-options" id="payment-options" style="display: none;">
+                <p>Make Payment Using:</p>
+                <i class="fa fa-cc-visa"></i>
+                <i class="fa fa-cc-mastercard"></i>
+                <i class="fa fa-cc-paypal"></i>
+            </div>
+           
+            <button type="submit" class="btn">Register Here</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-content" id="contact">
+            <p>Contact us at: info@ieeetechfutures2024.org or call +91 9876543210</p>
+            <p>Follow us on social media: </p>
+            <a href="https://www.instagram.com/ieeeorg/?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=sm-youtube"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/ieee?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=sm-linkedin"><i><i class="fa fa-linkedin-square"></i></a>
+            <a href="https://www.facebook.com/IEEE.org/?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=sm-facebook"><i class="fa fa-facebook-f"></i></a>
+            <p>© Copyright 2024 IEEE – All rights reserved. A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
